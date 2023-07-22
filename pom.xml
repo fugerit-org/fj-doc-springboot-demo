@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>org.fugerit.java.demo</groupId>
 	<artifactId>fj-doc-springboot-demo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>fj-doc-springboot-demo</name>
 	<description>Demo for Fugerti Doc Venus on Spring Boot</description>
 	<properties>
@@ -22,7 +22,7 @@
 			<dependency>
 				<groupId>org.fugerit.java</groupId>
 				<artifactId>fj-doc-bom-fop</artifactId>
-				<version>1.3.2-rc.001</version>
+				<version>1.4.0-native.001</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>

@@ -2,9 +2,9 @@
   "bundles": [],
   "resources": {
     "includes": [
-      {
-        "pattern": "fj-doc-demo/freemarker-doc-process.xml"
-      }
+      { "pattern": "fj-doc-demo/freemarker-doc-process.xml" },
+      { "pattern": "fj-doc-demo/template/demo.ftl" },
+      { "pattern": "sample/demo.xml" }
     ]
   }
 }

@@ -1,0 +1,10 @@
+[
+  {
+    "name": "org.fugerit.java.demo.fjdocspringbootdemo.doc.TestInfo",
+ 	"methods": [
+      { "name": "<init>", "parameterTypes": [] },
+      { "name": "getName", "parameterTypes": [] },
+      { "name": "getSurname", "parameterTypes": [] }
+    ]
+  }
+]

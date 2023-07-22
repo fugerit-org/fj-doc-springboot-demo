@@ -24,7 +24,7 @@
 	</docChain>
 
 	<docChain id="demo" parent="shared">
-		<chainStep stepType="complex" template-path="demo.ftl"/>
+		<chainStep stepType="complex" map-atts="testInfo" template-path="demo.ftl"/>
 	</docChain>
 
 </freemarker-doc-process-config>
