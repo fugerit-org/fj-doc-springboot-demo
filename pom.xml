@@ -45,6 +45,12 @@
 		</dependency>
 		
 		<dependency>
+			<groupId>org.fugerit.java</groupId>
+			<artifactId>fj-doc-mod-openpdf</artifactId>
+			<version>0.1.0-rc.001</version>
+		</dependency>
+		
+		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<scope>provided</scope>

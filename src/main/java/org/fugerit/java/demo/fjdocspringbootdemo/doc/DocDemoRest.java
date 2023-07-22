@@ -14,7 +14,7 @@ import org.fugerit.java.doc.base.process.DocProcessContext;
 import org.fugerit.java.doc.base.process.DocProcessData;
 import org.fugerit.java.doc.base.typehandler.markdown.SimpleMarkdownExtTypeHandler;
 import org.fugerit.java.doc.freemarker.html.FreeMarkerHtmlTypeHandlerUTF8;
-import org.fugerit.java.doc.mod.fop.PdfFopTypeHandler;
+import org.fugerit.java.doc.mod.openpdf.PdfTypeHandler;
 import org.springframework.core.io.InputStreamResource;
 import org.springframework.core.io.InputStreamSource;
 import org.springframework.http.HttpStatus;
@@ -50,7 +50,7 @@ public class DocDemoRest {
 	
  	@GetMapping( value = "/demo.pdf" , produces = MediaType.APPLICATION_PDF_VALUE )
 	public ResponseEntity<InputStreamSource> getDemoPdf() {
-		return this.demoFmHelper( PdfFopTypeHandler.HANDLER );
+		return this.demoFmHelper( PdfTypeHandler.HANDLER );
 	}
  	
  	@GetMapping( value = "/demo.xml" , produces = MediaType.TEXT_XML_VALUE )
