@@ -15,17 +15,20 @@ import org.fugerit.java.doc.base.process.DocProcessData;
 import org.fugerit.java.doc.base.typehandler.markdown.SimpleMarkdownExtTypeHandler;
 import org.fugerit.java.doc.freemarker.html.FreeMarkerHtmlTypeHandlerUTF8;
 import org.fugerit.java.doc.mod.openpdf.PdfTypeHandler;
+import org.fugerit.java.doc.mod.poi5.XlsxPoi5TypeHandler;
 import org.springframework.core.io.InputStreamResource;
 import org.springframework.core.io.InputStreamSource;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
+@RequestMapping("/docsb/")
 @RestController
 public class DocDemoRest {
 
@@ -51,6 +54,11 @@ public class DocDemoRest {
  	@GetMapping( value = "/demo.pdf" , produces = MediaType.APPLICATION_PDF_VALUE )
 	public ResponseEntity<InputStreamSource> getDemoPdf() {
 		return this.demoFmHelper( PdfTypeHandler.HANDLER );
+	}
+ 	
+ 	@GetMapping( value = "/demo.xlsx" , produces = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" )
+	public ResponseEntity<InputStreamSource> getDemoXlsx() {
+		return this.demoFmHelper( XlsxPoi5TypeHandler.HANDLER );
 	}
  	
  	@GetMapping( value = "/demo.xml" , produces = MediaType.TEXT_XML_VALUE )

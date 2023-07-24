@@ -34,6 +34,12 @@
   		
   		<para>Data : <#if (testInfo)?? > ${testInfo.name!'No name'} ${testInfo.surname!'No surname'} </#if> </para>
   		
+  		<table columns="1" colwidths="100"  width="100" id="excel-table" padding="2">
+  			<row>
+  				<cell><para>Test</para></cell>
+  			</row>
+  		</table>
+  		
   </body>
   
 </doc>

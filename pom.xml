@@ -13,8 +13,10 @@
 	<version>0.0.2-SNAPSHOT</version>
 	<name>fj-doc-springboot-demo</name>
 	<description>Demo for Fugerti Doc Venus on Spring Boot</description>
+	
 	<properties>
 		<java.version>17</java.version>
+		<fj-doc-version>1.4.0-native.001</fj-doc-version>
 	</properties>
 	
 	<dependencyManagement>
@@ -22,7 +24,7 @@
 			<dependency>
 				<groupId>org.fugerit.java</groupId>
 				<artifactId>fj-doc-bom-fop</artifactId>
-				<version>1.4.0-native.001</version>
+				<version>${fj-doc-version}</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -42,6 +44,12 @@
 		<dependency>
 			<groupId>org.fugerit.java</groupId>
 			<artifactId>fj-doc-mod-fop</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.fugerit.java</groupId>
+			<artifactId>fj-doc-mod-poi5</artifactId>
+			<version>${fj-doc-version}</version>
 		</dependency>
 		
 		<dependency>
