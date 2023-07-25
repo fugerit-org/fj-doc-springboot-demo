@@ -76,7 +76,7 @@ public class DocDemoRest {
 
  	@GetMapping( value = "/demo.md" , produces = MediaType.TEXT_MARKDOWN_VALUE )
 	public ResponseEntity<InputStreamSource> getDemoMd() {
-		return this.demoFmHelper( SimpleMarkdownExtTypeHandler.HANDLER_UTF8 );
+		return this.demoFmHelper( SimpleMarkdownExtTypeHandler.HANDLER_NOCOMMENTS_UTF8 );
 	}
 
 	
