@@ -19,23 +19,13 @@
 		<fj-doc-version>1.4.0-native.001</fj-doc-version>
 	</properties>
 	
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.fugerit.java</groupId>
-				<artifactId>fj-doc-bom-fop</artifactId>
-				<version>${fj-doc-version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
-	
 	<dependencies>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -43,7 +33,20 @@
 		
 		<dependency>
 			<groupId>org.fugerit.java</groupId>
+			<artifactId>fj-doc-base</artifactId>
+			<version>${fj-doc-version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.fugerit.java</groupId>
+			<artifactId>fj-doc-freemarker</artifactId>
+			<version>${fj-doc-version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.fugerit.java</groupId>
 			<artifactId>fj-doc-mod-fop</artifactId>
+			<version>${fj-doc-version}</version>
 		</dependency>
 		
 		<dependency>
@@ -69,6 +72,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
 	</dependencies>
 
 	<build>
